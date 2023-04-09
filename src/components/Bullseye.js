@@ -13,11 +13,11 @@ import React from "react";
   return (
     <div className="flex justify-center items-center  w-[7.9%] h-[7.9%]">
       <button
-        className="w-[7.098%] h-[7.098%] bg-green-700 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-2 border-solid border-zinc-400"
+        className="w-[15%] h-[15%]  lg:w-[7.098%] lg:h-[7.098%] bg-green-700 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-2 border-solid border-zinc-400"
         onClick={handleOuterBullseyeScoreChange}
       ></button>
       <button
-        className="z-50 w-[2.817%] h-[2.817%] bg-red-700 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-2 border-solid border-zinc-400  "
+        className="z-50 w-[7.5%] h-[7.5%]  lg:w-[2.817%] lg:h-[2.817%] bg-red-700 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-2 border-solid border-zinc-400  "
         onClick={handleInnerBullseyeScoreChange}      ></button>
     </div>
   );

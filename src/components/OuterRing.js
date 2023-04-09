@@ -82,7 +82,7 @@ const OuterRing = ({ onScoreChange }) => {
   return (
     <>
       <div
-        className=" w-[71%] h-[71%] rounded-full  absolute left-1/2 top-1/2 -translate-x-[50%] -translate-y-[50%]
+        className="w-[70%] h-[68%] lg:w-[71%] lg:h-[71%] rounded-full  absolute left-1/2 top-1/2 -translate-x-[50%] -translate-y-[50%]
  overflow-hidden"
       >
         {/* top */}
