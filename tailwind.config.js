@@ -18,7 +18,22 @@ module.exports = {
         '1/2': '50%',
         'borderLeftWidthPercent': '50%',
 
-      }
+      },
+      backgroundColor: {
+        'dark-green': '#224229',
+        'dartboard-black': '#1D1F21',
+        'dartboard-red': '#C92C2E',
+        'dartboard-green': '#1A6A2F',
+        'warm-gold': '#C6A155',
+        'light-off-white': '#EDEDED',
+      },
+      textColor: {
+        'dartboard-black': '#1D1F21',
+        'dartboard-red': '#C92C2E',
+        'dartboard-green': '#1A6A2F',
+        'warm-gold': '#C6A155',
+        'light-off-white': '#EDEDED',
+      },
       
     },
   },

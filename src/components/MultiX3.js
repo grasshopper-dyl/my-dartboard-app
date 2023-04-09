@@ -89,35 +89,35 @@ const MultiX3 = ({ onScoreChange }) => {
 <button
   value="60"
   id="20x3"
-  className="w-1/2 h-[16%] bg-red-700 absolute top-0 right-1/2 translate-y-[100%] translate-x-[50%] transform rotate-90"
+  className="w-1/2 h-[16%] bg-dartboard-red absolute top-0 right-1/2 translate-y-[100%] translate-x-[50%] transform rotate-90"
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleTriple20ScoreChange}
 ></button>
 <button
   value="3"
   id="1x3"
-  className="w-1/2 h-[16%] bg-green-700 absolute bottom-[65.5%] right-[17.5%]   transform rotate-108 "
+  className="w-1/2 h-[16%] bg-dartboard-green absolute bottom-[65.5%] right-[17.5%]   transform rotate-108 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleTriple1ScoreChange}
 ></button>
 <button
   value="39"
   id="13x3"
-  className="w-1/2 h-[16%] bg-red-700 absolute right-0 bottom-1/2 transform  rotate-162"
+  className="w-1/2 h-[16%] bg-dartboard-red absolute right-0 bottom-1/2 transform  rotate-162"
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleTriple13ScoreChange}
 ></button>
 <button
   value="12"
   id="4x3"
-  className="w-1/2 h-[16%] bg-green-700 absolute bottom-[56.2%] right-[5.1%]   transform rotate-144 "
+  className="w-1/2 h-[16%] bg-dartboard-green absolute bottom-[56.2%] right-[5.1%]   transform rotate-144 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleTriple4ScoreChange}
 ></button>
 <button
   value="54"
   id="18x3"
-  className="w-1/2 h-[16%] bg-red-700 absolute bottom-[62%] right-[10.5%]   transform rotate-126 "
+  className="w-1/2 h-[16%] bg-dartboard-red absolute bottom-[62%] right-[10.5%]   transform rotate-126 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleTriple18ScoreChange}
 ></button>
@@ -125,28 +125,28 @@ const MultiX3 = ({ onScoreChange }) => {
 <button
   value="18"
   id="6x3"
-  className="w-1/2 h-[16%] bg-green-700 absolute top-1/2 right-0  -translate-y-1/2 transform rotate-180"
+  className="w-1/2 h-[16%] bg-dartboard-green absolute top-1/2 right-0  -translate-y-1/2 transform rotate-180"
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleTriple6ScoreChange}
 ></button>
 <button
   value="30"
   id="10x3"
-  className="w-1/2 h-[16%] bg-red-700 absolute right-0 bottom-1/2 translate-y-[100%] transform  -rotate-162"
+  className="w-1/2 h-[16%] bg-dartboard-red absolute right-0 bottom-1/2 translate-y-[100%] transform  -rotate-162"
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleTriple10ScoreChange}
 ></button>
 <button
   value="45"
   id="15x3"
-  className="w-1/2 h-[16%] bg-green-700 absolute top-[56.2%] right-[5.1%]   transform -rotate-144 "
+  className="w-1/2 h-[16%] bg-dartboard-green absolute top-[56.2%] right-[5.1%]   transform -rotate-144 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleTriple15ScoreChange}
 ></button>
 <button
   value="6"
   id="2x3"
-  className="w-1/2 h-[16%] bg-red-700 absolute top-[62%] right-[10.5%]   transform -rotate-126 "
+  className="w-1/2 h-[16%] bg-dartboard-red absolute top-[62%] right-[10.5%]   transform -rotate-126 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleTriple2ScoreChange}
 ></button>
@@ -154,42 +154,42 @@ const MultiX3 = ({ onScoreChange }) => {
 <button
   value="51"
   id="17x3"
-  className="w-1/2 h-[16%] bg-green-700 absolute top-[65.5%] right-[17.5%]   transform -rotate-108 "
+  className="w-1/2 h-[16%] bg-dartboard-green absolute top-[65.5%] right-[17.5%]   transform -rotate-108 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleTriple17ScoreChange}
 ></button>
 <button
   value="9"
   id="3x3"
-  className="w-1/2 h-[16%] bg-red-700 absolute bottom-0 right-1/2 -translate-y-[100%] translate-x-[50%] transform -rotate-90"
+  className="w-1/2 h-[16%] bg-dartboard-red absolute bottom-0 right-1/2 -translate-y-[100%] translate-x-[50%] transform -rotate-90"
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleTriple3ScoreChange}
 ></button>
         <button
   value="57"
   id="19x3"
-  className="w-1/2 h-[16%] bg-green-700 absolute top-[65.5%] left-[17.5%]   transform -rotate-72 "
+  className="w-1/2 h-[16%] bg-dartboard-green absolute top-[65.5%] left-[17.5%]   transform -rotate-72 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleTriple19ScoreChange}
 ></button>
 <button
   value="36"
   id="12x3"
-  className="w-1/2 h-[16%] bg-red-700 absolute top-[62%] left-[10.5%]   transform -rotate-54 "
+  className="w-1/2 h-[16%] bg-dartboard-red absolute top-[62%] left-[10.5%]   transform -rotate-54 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleTriple12ScoreChange}
 ></button>
 <button
   value="48"
   id="16x3"
-  className="w-1/2 h-[16%] bg-green-700 absolute top-[56.2%] left-[5.1%]   transform -rotate-36 "
+  className="w-1/2 h-[16%] bg-dartboard-green absolute top-[56.2%] left-[5.1%]   transform -rotate-36 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleTriple16ScoreChange}
 ></button>
 <button
   value="34"
   id="8x3"
-  className="w-1/2 h-[16%] bg-red-700 absolute left-0 bottom-1/2 translate-y-[100%] transform  -rotate-18"
+  className="w-1/2 h-[16%] bg-dartboard-red absolute left-0 bottom-1/2 translate-y-[100%] transform  -rotate-18"
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleTriple8ScoreChange}
 ></button>
@@ -197,35 +197,35 @@ const MultiX3 = ({ onScoreChange }) => {
 <button
   value="33"
   id="11x3"
-  className="w-1/2 h-[16%] bg-green-700 absolute top-1/2 left-0 -translate-y-1/2 transform "
+  className="w-1/2 h-[16%] bg-dartboard-green absolute top-1/2 left-0 -translate-y-1/2 transform "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleTriple11ScoreChange}
 ></button>
 <button
   value="42"
   id="14x3"
-  className="w-1/2 h-[16%] bg-red-700 absolute left-0 bottom-1/2 transform  rotate-18"
+  className="w-1/2 h-[16%] bg-dartboard-red absolute left-0 bottom-1/2 transform  rotate-18"
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleTriple14ScoreChange}
 ></button>
 <button
   value="27"
   id="9x3"
-  className="w-1/2 h-[16%] bg-green-700 absolute bottom-[56.2%] left-[5.1%]   transform rotate-36 "
+  className="w-1/2 h-[16%] bg-dartboard-green absolute bottom-[56.2%] left-[5.1%]   transform rotate-36 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleTriple9ScoreChange}
 ></button>
 <button
   value="36"
   id="12x3"
-  className="w-1/2 h-[16%] bg-red-700 absolute bottom-[62%] left-[10.5%]   transform rotate-54 "
+  className="w-1/2 h-[16%] bg-dartboard-red absolute bottom-[62%] left-[10.5%]   transform rotate-54 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleTriple12ScoreChange}
 ></button>
 <button
   value="15"
   id="5x3"
-  className="w-1/2 h-[16%] bg-green-700 absolute bottom-[65.5%] left-[17.5%]   transform rotate-72 "
+  className="w-1/2 h-[16%] bg-dartboard-green absolute bottom-[65.5%] left-[17.5%]   transform rotate-72 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleTriple5ScoreChange}
 ></button>

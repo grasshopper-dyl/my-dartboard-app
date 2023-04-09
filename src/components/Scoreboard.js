@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import DartBoard from "./DartBoard";
+import Image from "next/image";
+import wood from '../images/wood.png'
 
 export default function Scoreboard() {
   const [playerScores, setPlayerScores] = useState([]);
@@ -57,7 +59,7 @@ export default function Scoreboard() {
       playerScorePanels.push(
         <div className="flex flex-col items-center" key={`player-${i}`}>
           <h2 className="text-2xl text-white font-bold mb-4">{`Player ${i}`}</h2>
-          <div className="bg-gray-100 rounded-lg p-4 border-solid border-black border-2">
+          <div className="bg-gray-100 rounded-lg p-4 border-solid border-black border-2 min-w-[100px] min-h-[50px] flex items-center justify-center">
             <h3 className="text-2xl text-black font-bold">
               {playerScores[i - 1]}
             </h3>
@@ -67,25 +69,34 @@ export default function Scoreboard() {
     }
     return playerScorePanels;
   };
+  
 
 
 
 
 
 return (
-  <div className=" relative min-h-screen w-full bg-zinc-500">
-    <h1 className="text-4xl font-bold mb-8 p-8 text-center bg-red-800 text-white">
+  <div className=" relative h-full w-full">
+    <Image 
+    src={wood}
+    alt=""
+    className="z-0 w-full h-full absolute "
+    />
+    <div className="z-30 w-full h-fit p-4 text-center bg-red-800 text-white" >
+    <h1 className=" text-2xl font-bold z-30 ">
       {gameMode} Dart Scoreboard
     </h1>
+    </div>
     <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
       <div className="mx-auto bg-transparent">
         <DartBoard onScoreChange={handleScoreChange} />
       </div>
-      <div className="flex flex-col bg-amber-900 h-fit w-[90%] max-w-4xl p-8 mb-12 rounded-xl shadow-xl mx-auto items-center ">
-        <div className="flex space-x-12 max-w-[90%] mb-8">
+      <div className="z-10 flex flex-col bg-gray-900 h-fit w-11/12 max-w-4xl p-8 mb-12 rounded-xl shadow-xl mx-auto items-center border-solid border-2 border-yellow-600">
+  <div className="flex items-center justify-between mb-8 max-w-5xl mx-auto">
+  
           {Array.from(Array(numPlayers).keys()).map((playerIndex) => (
             <div className="flex flex-col max-w-[95] items-center" key={playerIndex}>
-              <h2 className="text-2xl text-white font-bold mb-4">
+              <h2 className="text-2xl text-white  font-bold mb-4">
                 Player {playerIndex + 1}
               </h2>
               <div className="bg-gray-100 rounded-lg p-4 border-solid border-black border-2">

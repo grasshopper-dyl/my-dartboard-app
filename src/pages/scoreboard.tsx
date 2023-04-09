@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Scoreboard from '../components/Scoreboard'
 const inter = Inter({ subsets: ['latin'] })
+import Layout from '../components/Layout'
 
 export default function ScoreboardPage() {
   return (
@@ -12,7 +13,9 @@ export default function ScoreboardPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+<Layout>
 <Scoreboard/>
+</Layout>
      </>
    )
    }

@@ -89,35 +89,35 @@ const OuterRing = ({ onScoreChange }) => {
 <button
   value="20"
   id="20x1"
-  className="w-1/2 h-[16%] bg-zinc-900 absolute top-0 right-1/2 translate-y-[100%] translate-x-[50%] transform rotate-90"
+  className="w-1/2 h-[16%] bg-dartboard-black absolute top-0 right-1/2 translate-y-[100%] translate-x-[50%] transform rotate-90"
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleSingle20ScoreChange}
 ></button>
 <button
   value="1"
   id="1x1"
-  className="w-1/2 h-[16%] bg-zinc-100 absolute bottom-[65.5%] right-[17.5%]   transform rotate-108 "
+  className="w-1/2 h-[16%] bg-light-off-white absolute bottom-[65.5%] right-[17.5%]   transform rotate-108 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleSingle18ScoreChange}
 ></button>
 <button
   value="13"
   id="13x1"
-  className="w-1/2 h-[16%] bg-zinc-900 absolute right-0 bottom-1/2 transform  rotate-162"
+  className="w-1/2 h-[16%] bg-dartboard-black absolute right-0 bottom-1/2 transform  rotate-162"
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleSingle13ScoreChange}
 ></button>
 <button
   value="4"
   id="4x1"
-  className="w-1/2 h-[16%] bg-zinc-100 absolute bottom-[56.2%] right-[5.1%]   transform rotate-144 "
+  className="w-1/2 h-[16%] bg-light-off-white absolute bottom-[56.2%] right-[5.1%]   transform rotate-144 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleSingle4ScoreChange}
 ></button>
 <button
   value="18"
   id="18x1"
-  className="w-1/2 h-[16%] bg-zinc-900 absolute bottom-[62%] right-[10.5%]   transform rotate-126 "
+  className="w-1/2 h-[16%] bg-dartboard-black absolute bottom-[62%] right-[10.5%]   transform rotate-126 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleSingle18ScoreChange}
 ></button>
@@ -125,28 +125,28 @@ const OuterRing = ({ onScoreChange }) => {
 <button
   value="12"
   id="6x1"
-  className="w-1/2 h-[16%] bg-zinc-100 absolute top-1/2 right-0  -translate-y-1/2 transform rotate-180"
+  className="w-1/2 h-[16%] bg-light-off-white absolute top-1/2 right-0  -translate-y-1/2 transform rotate-180"
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleSingle6ScoreChange}
 ></button>
 <button
   value="10"
   id="10x1"
-  className="w-1/2 h-[16%] bg-zinc-900 absolute right-0 bottom-1/2 translate-y-[100%] transform  -rotate-162"
+  className="w-1/2 h-[16%] bg-dartboard-black absolute right-0 bottom-1/2 translate-y-[100%] transform  -rotate-162"
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleSingle10ScoreChange}
 ></button>
 <button
   value="15"
   id="15x1"
-  className="w-1/2 h-[16%] bg-zinc-100 absolute top-[56.2%] right-[5.1%]   transform -rotate-144 "
+  className="w-1/2 h-[16%] bg-light-off-white absolute top-[56.2%] right-[5.1%]   transform -rotate-144 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleSingle15ScoreChange}
 ></button>
 <button
   value="2"
   id="2x1"
-  className="w-1/2 h-[16%] bg-zinc-900 absolute top-[62%] right-[10.5%]   transform -rotate-126 "
+  className="w-1/2 h-[16%] bg-dartboard-black absolute top-[62%] right-[10.5%]   transform -rotate-126 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleSingle2ScoreChange}
 ></button>
@@ -154,42 +154,42 @@ const OuterRing = ({ onScoreChange }) => {
 <button
   value="17"
   id="17x1"
-  className="w-1/2 h-[16%] bg-zinc-100 absolute top-[65.5%] right-[17.5%]   transform -rotate-108 "
+  className="w-1/2 h-[16%] bg-light-off-white absolute top-[65.5%] right-[17.5%]   transform -rotate-108 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleSingle17ScoreChange}
 ></button>
 <button
   value="3"
   id="3x1"
-  className="w-1/2 h-[16%] bg-zinc-900 absolute bottom-0 right-1/2 -translate-y-[100%] translate-x-[50%] transform -rotate-90"
+  className="w-1/2 h-[16%] bg-dartboard-black absolute bottom-0 right-1/2 -translate-y-[100%] translate-x-[50%] transform -rotate-90"
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleSingle3ScoreChange}
 ></button>
         <button
   value="19"
   id="19x1"
-  className="w-1/2 h-[16%] bg-zinc-100 absolute top-[65.5%] left-[17.5%]   transform -rotate-72 "
+  className="w-1/2 h-[16%] bg-light-off-white absolute top-[65.5%] left-[17.5%]   transform -rotate-72 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleSingle19ScoreChange}
 ></button>
 <button
   value="12"
   id="12x1"
-  className="w-1/2 h-[16%] bg-zinc-900 absolute top-[62%] left-[10.5%]   transform -rotate-54 "
+  className="w-1/2 h-[16%] bg-dartboard-black absolute top-[62%] left-[10.5%]   transform -rotate-54 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleSingle12ScoreChange}
 ></button>
 <button
   value="16"
   id="16x1"
-  className="w-1/2 h-[16%] bg-zinc-100 absolute top-[56.2%] left-[5.1%]   transform -rotate-36 "
+  className="w-1/2 h-[16%] bg-light-off-white absolute top-[56.2%] left-[5.1%]   transform -rotate-36 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleSingle16ScoreChange}
 ></button>
 <button
   value="8"
   id="8x1"
-  className="w-1/2 h-[16%] bg-zinc-900 absolute left-0 bottom-1/2 translate-y-[100%] transform  -rotate-18"
+  className="w-1/2 h-[16%] bg-dartboard-black absolute left-0 bottom-1/2 translate-y-[100%] transform  -rotate-18"
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleSingle8ScoreChange}
 ></button>
@@ -197,35 +197,35 @@ const OuterRing = ({ onScoreChange }) => {
 <button
   value="11"
   id="11x1"
-  className="w-1/2 h-[16%] bg-zinc-100 absolute top-1/2 left-0 -translate-y-1/2 transform "
+  className="w-1/2 h-[16%] bg-light-off-white absolute top-1/2 left-0 -translate-y-1/2 transform "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleSingle11ScoreChange}
 ></button>
 <button
   value="14"
   id="14x1"
-  className="w-1/2 h-[16%] bg-zinc-900 absolute left-0 bottom-1/2 transform  rotate-18"
+  className="w-1/2 h-[16%] bg-dartboard-black absolute left-0 bottom-1/2 transform  rotate-18"
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleSingle14ScoreChange}
 ></button>
 <button
   value="9"
   id="9x1"
-  className="w-1/2 h-[16%] bg-zinc-100 absolute bottom-[56.2%] left-[5.1%]   transform rotate-36 "
+  className="w-1/2 h-[16%] bg-light-off-white absolute bottom-[56.2%] left-[5.1%]   transform rotate-36 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleSingle9ScoreChange}
 ></button>
 <button
   value="12"
   id="12x1"
-  className="w-1/2 h-[16%] bg-zinc-900 absolute bottom-[62%] left-[10.5%]   transform rotate-54 "
+  className="w-1/2 h-[16%] bg-dartboard-black absolute bottom-[62%] left-[10.5%]   transform rotate-54 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleSingle12ScoreChange}
 ></button>
 <button
   value="5"
   id="5x1"
-  className="w-1/2 h-[16%] bg-zinc-100 absolute bottom-[65.5%] left-[17.5%]   transform rotate-72 "
+  className="w-1/2 h-[16%] bg-light-off-white absolute bottom-[65.5%] left-[17.5%]   transform rotate-72 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleSingle5ScoreChange}
 ></button>
