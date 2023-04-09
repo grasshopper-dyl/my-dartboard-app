@@ -82,7 +82,7 @@ const MultiX3 = ({ onScoreChange }) => {
   return (
     <>
       <div
-        className="w-[47.44%] h-[47.44%] rounded-full  absolute left-1/2 top-1/2 -translate-x-[50%] -translate-y-[50%] border-2 border-solid border-zinc-400
+        className=" w-[51%] h-[51%] lg:w-[47.44%] lg:h-[47.44%] rounded-full  absolute left-1/2 top-1/2 -translate-x-[50%] -translate-y-[50%] border-2 border-solid border-zinc-400
  overflow-hidden"
       >
         {/* top */}
