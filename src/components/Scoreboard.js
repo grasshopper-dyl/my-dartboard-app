@@ -73,8 +73,8 @@ export default function Scoreboard() {
 
 
 return (
-  <div className=" relative bg-zinc-500">
-    <h1 className="text-4xl font-bold mb-8 pt-16 text-center bg-red-800 text-white">
+  <div className=" relative min-h-screen w-full bg-zinc-500">
+    <h1 className="text-4xl font-bold mb-8 p-8 text-center bg-red-800 text-white">
       {gameMode} Dart Scoreboard
     </h1>
     <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
@@ -82,9 +82,9 @@ return (
         <DartBoard onScoreChange={handleScoreChange} />
       </div>
       <div className="flex flex-col bg-amber-900 h-fit w-[90%] max-w-4xl p-8 mb-12 rounded-xl shadow-xl mx-auto items-center ">
-        <div className="flex space-x-12 mb-8">
+        <div className="flex space-x-12 max-w-[90%] mb-8">
           {Array.from(Array(numPlayers).keys()).map((playerIndex) => (
-            <div className="flex flex-col items-center" key={playerIndex}>
+            <div className="flex flex-col max-w-[95] items-center" key={playerIndex}>
               <h2 className="text-2xl text-white font-bold mb-4">
                 Player {playerIndex + 1}
               </h2>
@@ -101,7 +101,7 @@ return (
           <br />
           {turns[currentPlayer - 1]} throws remaining
         </h2>
-        <div className="flex space-x-4 h-4  mb-4">
+        <div className="flex justify-center  max-w-[90%] space-x-4 h-4 mb-4">
           <button
             className={`h-fit px-4 py-2 border-2 border-solid border-gray-400 bg-green-800 text-white rounded-lg p-2 ${
               gameMode === "301" ? "bg-gray-400" : ""
@@ -136,25 +136,25 @@ return (
           </button>
         </div>
         {winningPlayer && (
-          <div className="text-3xl font-bold mb-4">
+          <div className="text-3xl p-4 text-white font-bold mb-4">
             Player {winningPlayer} wins!
           </div>
         )}
           <br />
-          <div className="flex flex-col rounded-xl text-white">
+          <div className="flex flex-col  rounded-xl items-center text-white">
             <button
-              className="bg-blue-500 p-2 mb-4 rounded-lg"
+              className="bg-blue-500 p-2 mb-4 w-fit h-fit rounded-lg"
               onClick={resetGame}
             >
               Reset Game
             </button>
             <button
-              className="bg-red-500 p-2 mb-4 rounded-lg"
+              className="bg-red-500 w-fit h-fit p-2 mb-4 rounded-lg"
               onClick={undoLastThrow}
             >
               Undo Last Throw
             </button>
-            <div className="flex space-x-4 h-4 mb-4">
+            <div className="flex flex-wrap justify-center items-center gap-4   max-w-[90%] p-4">
               <button
                 className={`h-fit px-4 py-2 border-2 border-solid border-gray-400 bg-green-800 text-white rounded-lg p-2 ${
                   numPlayers === 1 ? "bg-gray-400" : ""
