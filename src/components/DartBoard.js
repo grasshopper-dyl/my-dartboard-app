@@ -16,7 +16,12 @@ export default function DartBoard({ onScoreChange }) {
     <>
     <div className="relative w-full h-full flex justify-center items-center">
       <div className=" transform -rotate-9 ">
-        <Image src={numbers} />
+        <Image src={numbers}
+        alt="dartboard numbers"
+        loading="eager"
+        placeholder="black"
+
+        />
       </div>
       <MultiX2 onScoreChange={handleScoreChange} />
       <OuterRing onScoreChange={handleScoreChange}/>

@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 import Scoreboard from '../components/Scoreboard'
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function ScoreboardPage() {
   return (
     <>
       <Head>

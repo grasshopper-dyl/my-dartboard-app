@@ -4,79 +4,79 @@ const MultiX3 = ({ onScoreChange }) => {
   };
 
   const handleTriple2ScoreChange = () => {
-    onScoreChange(4);
-  };
-
-  const handleTriple3ScoreChange = () => {
     onScoreChange(6);
   };
 
+  const handleTriple3ScoreChange = () => {
+    onScoreChange(9);
+  };
+
   const handleTriple4ScoreChange = () => {
-    onScoreChange(8);
-  };
-
-  const handleTriple5ScoreChange = () => {
-    onScoreChange(10);
-  };
-
-  const handleTriple6ScoreChange = () => {
     onScoreChange(12);
   };
 
-  const handleTriple7ScoreChange = () => {
-    onScoreChange(14);
+  const handleTriple5ScoreChange = () => {
+    onScoreChange(15);
   };
 
-  const handleTriple8ScoreChange = () => {
-    onScoreChange(16);
-  };
-
-  const handleTriple9ScoreChange = () => {
+  const handleTriple6ScoreChange = () => {
     onScoreChange(18);
   };
 
-  const handleTriple10ScoreChange = () => {
-    onScoreChange(20);
+  const handleTriple7ScoreChange = () => {
+    onScoreChange(21);
   };
 
-  const handleTriple11ScoreChange = () => {
-    onScoreChange(22);
-  };
-
-  const handleTriple12ScoreChange = () => {
+  const handleTriple8ScoreChange = () => {
     onScoreChange(24);
   };
 
-  const handleTriple13ScoreChange = () => {
-    onScoreChange(26);
+  const handleTriple9ScoreChange = () => {
+    onScoreChange(27);
   };
 
-  const handleTriple14ScoreChange = () => {
-    onScoreChange(28);
-  };
-
-  const handleTriple15ScoreChange = () => {
+  const handleTriple10ScoreChange = () => {
     onScoreChange(30);
   };
 
-  const handleTriple16ScoreChange = () => {
-    onScoreChange(32);
+  const handleTriple11ScoreChange = () => {
+    onScoreChange(33);
   };
 
-  const handleTriple17ScoreChange = () => {
-    onScoreChange(34);
-  };
-
-  const handleTriple18ScoreChange = () => {
+  const handleTriple12ScoreChange = () => {
     onScoreChange(36);
   };
 
+  const handleTriple13ScoreChange = () => {
+    onScoreChange(439);
+  };
+
+  const handleTriple14ScoreChange = () => {
+    onScoreChange(42);
+  };
+
+  const handleTriple15ScoreChange = () => {
+    onScoreChange(45);
+  };
+
+  const handleTriple16ScoreChange = () => {
+    onScoreChange(48);
+  };
+
+  const handleTriple17ScoreChange = () => {
+    onScoreChange(51);
+  };
+
+  const handleTriple18ScoreChange = () => {
+    onScoreChange(54);
+  };
+
   const handleTriple19ScoreChange = () => {
-    onScoreChange(38);
+    onScoreChange(57);
   };
 
   const handleTriple20ScoreChange = () => {
-    onScoreChange(40);
+    onScoreChange(60);
   };
 
   return (
@@ -98,7 +98,7 @@ const MultiX3 = ({ onScoreChange }) => {
   id="1x3"
   className="w-1/2 h-[16%] bg-green-700 absolute bottom-[65.5%] right-[17.5%]   transform rotate-108 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
-  onClick={handleTriple18ScoreChange}
+  onClick={handleTriple1ScoreChange}
 ></button>
 <button
   value="39"

@@ -89,7 +89,7 @@ const MultiX2 = ({ onScoreChange }) => {
 <button
   value="40"
   id="20x2"
-  className="w-1/2 h-[16%] bg-red-700 absolute top-0 right-1/2 translate-y-[100%] translate-x-[50%] transform rotate-90"
+  className="w-1/2 h-[16%] bg-red-700 absolute top-0 right-1/2 translate-y-[100%] translate-x-[50%] transform rotate-90 " 
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
   onClick={handleDouble20ScoreChange}
 ></button>
