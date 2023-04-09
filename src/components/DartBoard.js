@@ -13,14 +13,18 @@ export default function DartBoard({ onScoreChange }) {
   };
 
   return (
+    <>
     <div className="relative w-full h-full flex justify-center items-center">
-      <div className="z-50 transform -rotate-9 ">
+      <div className=" transform -rotate-9 ">
         <Image src={numbers} />
       </div>
       <MultiX2 onScoreChange={handleScoreChange} />
-
-      
+      <OuterRing onScoreChange={handleScoreChange}/>
+      <MultiX3 onScoreChange={handleScoreChange} />
+      <InnerRing onScoreChange={handleScoreChange}/>
+      <Bullseye onScoreChange={handleScoreChange}/>
 
     </div>
+        </>
   );
 }

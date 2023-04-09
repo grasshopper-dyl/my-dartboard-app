@@ -64,26 +64,28 @@ export default function Scoreboard() {
       <h1 className="text-4xl font-bold mb-8 py-16 text-center bg-red-800 text-white">
         {gameMode} Dart Scoreboard
       </h1>
-      <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="flex flex-col bg-amber-900 h-fit p-8 rounded-xl shadow-xl mx-auto ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
+        <div className="flex flex-col bg-amber-900 h-fit w-[90%] max-w-4xl p-8 mb-12 rounded-xl shadow-xl mx-auto items-center ">
           <div className="flex space-x-12 mb-8">
             <div className="flex flex-col items-center">
-              <h2 className="text-2xl font-bold mb-4">Player 1</h2>
-              <div className="bg-gray-200 rounded-lg p-4">
-              <h3 className="text-2xl font-bold">{player1Score}</h3>
+              <h2 className="text-2xl text-white font-bold mb-4">Player 1</h2>
+              <div className="bg-gray-100 rounded-lg p-4 border-solid border-black border-2">
+              <h3 className="text-2xl text-black font-bold">{player1Score}</h3>
       </div>
     </div>
     <div className="flex flex-col items-center">
-      <h2 className="text-2xl font-bold mb-4">Player 2</h2>
-      <div className="bg-gray-200 rounded-lg p-4">
+      <h2 className="text-2xl text-white font-bold mb-4">Player 2</h2>
+      <div className="bg-gray-100 text-black rounded-lg p-4 border-solid border-black border-2">
         <h3 className="text-2xl font-bold">{player2Score}</h3>
       </div>
     </div>
   </div>
-  <h2 className="text-2xl font-bold mb-4">
-    Player {currentPlayer}'s turn - {turns[`player${currentPlayer}`]} throws remaining
+  <h2 className="text-2xl font-bold mb-4 text-center text-white">
+    Player {currentPlayer}'s turn 
+    <br></br>
+    {turns[`player${currentPlayer}`]} throws remaining
   </h2>
-  <div className="flex space-x-4 h-4 w-fit flex-1 mb-4">
+  <div className="flex space-x-4 h-4  mb-4">
     <button
       className={`h-fit px-4 py-2 border-2 border-solid border-gray-400 bg-green-800 text-white rounded-lg p-2 ${
         gameMode === "301" ? "bg-gray-400" : ""
@@ -138,7 +140,7 @@ export default function Scoreboard() {
     </button>
   </div>
 </div>
-<div className="mx-auto border-black border-2 border-solid">
+<div className="mx-auto bg-transparent">
   <DartBoard onScoreChange={handleScoreChange} />
 </div>
 

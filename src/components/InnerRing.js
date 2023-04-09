@@ -1,317 +1,238 @@
-
-export default function InnerRing({onScoreChange}) {
-  const handleSingleScoreChange = (value) => {
-    onScoreChange(value * 1); // value * single multiplier (1)
+const InnerRing = ({ onScoreChange }) => {
+  const handleSingle1ScoreChange = () => {
+    onScoreChange(1);
   };
-  
-  const handle1ScoreChange = () => handleSingleScoreChange(1);
-  const handle2ScoreChange = () => handleSingleScoreChange(2);
-  const handle3ScoreChange = () => handleSingleScoreChange(3);
-  const handle4ScoreChange = () => handleSingleScoreChange(4);
-  const handle5ScoreChange = () => handleSingleScoreChange(5);
-  const handle6ScoreChange = () => handleSingleScoreChange(6);
-  const handle7ScoreChange = () => handleSingleScoreChange(7);
-  const handle8ScoreChange = () => handleSingleScoreChange(8);
-  const handle9ScoreChange = () => handleSingleScoreChange(9);
-  const handle10ScoreChange = () => handleSingleScoreChange(10);
-  const handle11ScoreChange = () => handleSingleScoreChange(11);
-  const handle12ScoreChange = () => handleSingleScoreChange(12);
-  const handle13ScoreChange = () => handleSingleScoreChange(13);
-  const handle14ScoreChange = () => handleSingleScoreChange(14);
-  const handle15ScoreChange = () => handleSingleScoreChange(15);
-  const handle16ScoreChange = () => handleSingleScoreChange(16);
-  const handle17ScoreChange = () => handleSingleScoreChange(17);
-  const handle18ScoreChange = () => handleSingleScoreChange(18);
-  const handle19ScoreChange = () => handleSingleScoreChange(19);
-  const handle20ScoreChange = () => handleSingleScoreChange(20);
-  
 
-return(
+  const handleSingle2ScoreChange = () => {
+    onScoreChange(2);
+  };
+
+  const handleSingle3ScoreChange = () => {
+    onScoreChange(3);
+  };
+
+  const handleSingle4ScoreChange = () => {
+    onScoreChange(4);
+  };
+
+  const handleSingle5ScoreChange = () => {
+    onScoreChange(5);
+  };
+
+  const handleSingle6ScoreChange = () => {
+    onScoreChange(6);
+  };
+
+  const handleSingle7ScoreChange = () => {
+    onScoreChange(7);
+  };
+
+  const handleSingle8ScoreChange = () => {
+    onScoreChange(8);
+  };
+
+  const handleSingle9ScoreChange = () => {
+    onScoreChange(9);
+  };
+
+  const handleSingle10ScoreChange = () => {
+    onScoreChange(10);
+  };
+
+  const handleSingle11ScoreChange = () => {
+    onScoreChange(11);
+  };
+
+  const handleSingle12ScoreChange = () => {
+    onScoreChange(12);
+  };
+
+  const handleSingle13ScoreChange = () => {
+    onScoreChange(13);
+  };
+
+  const handleSingle14ScoreChange = () => {
+    onScoreChange(14);
+  };
+
+  const handleSingle15ScoreChange = () => {
+    onScoreChange(15);
+  };
+
+  const handleSingle16ScoreChange = () => {
+    onScoreChange(16);
+  };
+
+  const handleSingle17ScoreChange = () => {
+    onScoreChange(17);
+  };
+
+  const handleSingle18ScoreChange = () => {
+    onScoreChange(18);
+  };
+
+  const handleSingle19ScoreChange = () => {
+    onScoreChange(19);
+  };
+
+  const handleSingle20ScoreChange = () => {
+    onScoreChange(20);
+  };
+
+  return (
     <>
-<div className="z-40 absolute left-1/2 top-1/2 -translate-x-[50%] -translate-y-[50%] w-[24rem] h-[24rem] rounded-full bg-zinc-400  overflow-hidden  border-2 border-solid border-zinc-400 " >
-<button 
+      <div
+        className=" w-[43.89%] h-[43.89%] rounded-full  absolute left-1/2 top-1/2 -translate-x-[50%] -translate-y-[50%]
+ overflow-hidden"
+      >
+        {/* top */}
+<button
   value="20"
-  id="20"
-  className="w-0 h-0 
-  border-l-[2rem] border-l-transparent
-  border-t-[12rem] border-t-zinc-900
-  border-r-[2rem] border-r-transparent
-  absolute
-  top-0
-  left-[50%]
-  -translate-x-[50%]"
-  onClick={handle20ScoreChange}  
-  >
-</button>
-
-<button 
+  id="20x1"
+  className="w-1/2 h-[16%] bg-zinc-900 absolute top-0 right-1/2 translate-y-[100%] translate-x-[50%] transform rotate-90"
+  style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
+  onClick={handleSingle20ScoreChange}
+></button>
+<button
   value="1"
-  id="1"
-  onClick={handle1ScoreChange}
-  className="w-0 h-0 
-  border-l-[2rem] border-l-transparent
-  border-t-[12rem] border-t-zinc--500
-  border-r-[2rem] border-r-transparent
-  absolute
-  top-[0rem]
-  left-[12rem]
-  rotate-18
-  
-" >
-</button>
-<button 
-  value="18"
-  id="18"
-  onClick={handle18ScoreChange}
-  className="w-0 h-0 
-  border-l-[2rem] border-l-transparent
-  border-t-[12rem] border-t-zinc-900
-  border-r-[2rem] border-r-transparent
-  absolute
-  top-[0.5rem]
-  left-[14rem]
-  rotate-36
-">
-</button>
-<button 
-  value="4"
-  id="4"
-  onClick={handle4ScoreChange}
-  className="w-0 h-0 
-  border-l-[2rem] border-l-transparent
-  border-t-[12rem] border-t-zinc-100
-  border-r-[2rem] border-r-transparent
-  absolute
-  top-[1.75rem]
-  left-[15.5rem]
-  rotate-54
-"></button>
-<button 
+  id="1x1"
+  className="w-1/2 h-[16%] bg-zinc-100 absolute bottom-[65.5%] right-[17.5%]   transform rotate-108 "
+  style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
+  onClick={handleSingle18ScoreChange}
+></button>
+<button
   value="13"
-  id="13"
-  onClick={handle13ScoreChange}
-  className="w-0 h-0 
-  border-l-[2rem] border-l-transparent
-  border-t-[12rem] border-t-zinc-900
-  border-r-[2rem] border-r-transparent
-  absolute
-  top-[3.8rem]
-  left-[16rem]
-  rotate-72
-"></button>
-<button 
-  value="6"
-  id="6"
-  onClick={handle6ScoreChange}
-  className="w-0 h-0 
-  border-l-[2rem] border-l-transparent
-  border-t-[12rem] border-t-zinc-100
-  border-r-[2rem] border-r-transparent
-  absolute
-  top-0
-  right-0
-  translate-y-[50%]
-  -translate-x-[100%]
-  rotate-90
-">
-</button>
-
-<button 
-  value="10"
-  id="10"
-  onClick={handle18ScoreChange}
-  className="w-0 h-0 
-  border-l-[2rem] border-l-transparent
-  border-t-[12rem] border-t-zinc-900
-  border-r-[2rem] border-r-transparent
-  absolute
-  bottom-[3.8rem]
-  left-[16rem]
-  rotate-108
-"></button>
-<button 
-  value="15"
-  id="15"
-  onClick={handle15ScoreChange}
-  className="w-0 h-0 
-  border-l-[2rem] border-l-transparent
-  border-t-[12rem] border-t-zinc-100
-  border-r-[2rem] border-r-transparent
-  absolute
-  bottom-[2.5rem]
-  right-[5rem]
-  rotate-126
-"></button>
-<button 
-  value="2"
-  id="2"
-  onClick={handle2ScoreChange}
-  className="w-0 h-0 
-  border-l-[2rem] border-l-transparent
-  border-t-[12rem] border-t-zinc-900
-  border-r-[2rem] border-r-transparent
-  absolute
-  bottom-[0.5rem]
-  left-[14rem]
-  rotate-144
-">
-</button>
-
-
-<button 
-  value="17"
-  id="17"
-  onClick={handle17ScoreChange}
-  className="w-0 h-0 
-  border-l-[2rem] border-l-transparent
-  border-t-[12rem] border-t-zinc-blue-500
-  border-r-[2rem] border-r-transparent
-  absolute
-  bottom-[0rem]
-  left-[12rem]
-  rotate-162
-">
-</button>
-<button 
-  value="3"
-  id="3"
-  onClick={handle3ScoreChange}
-  className="w-0 h-0 
-  border-l-[2rem] border-l-transparent
-  border-t-[12rem] border-t-zinc-900
-  border-r-[2rem] border-r-transparent
-  absolute
-  bottom-0
-  left-[50%]
-  -translate-x-[50%]
-  rotate-180
-">
-</button>
-<button 
-  value="19"
-  id="19"
-  onClick={handle19ScoreChange}
-  className="w-0 h-0 
-  border-l-[2rem] border-l-transparent
-  border-t-[12rem] border-t-zinc-blue-500
-  border-r-[2rem] border-r-transparent
-  absolute
-  bottom-[0rem]
-  right-[12rem]
-  -rotate-162
-">
-</button>
-<button 
-  value="8"
-  id="8"
-  onClick={handle8ScoreChange}
-  className="w-0 h-0 
-  border-l-[2rem] border-l-transparent
-  border-t-[12rem] border-t-zinc-900
-  border-r-[2rem] border-r-transparent
-  absolute
-  bottom-[0.5rem]
-  right-[14rem]
-  -rotate-144
-">
-</button>
-<button 
-  value="7"
-  id="7"
-  onClick={handle7ScoreChange}
-  className="w-0 h-0 
-  border-l-[2rem] border-l-transparent
-  border-t-[12rem] border-t-zinc-100
-  border-r-[2rem] border-r-transparent
-  absolute
-  bottom-[2.5rem]
-  left-[5rem]
-  -rotate-126
-"></button>
-<button 
-  value="16"
-  id="16"
-  onClick={handle16ScoreChange}
-  className="w-0 h-0 
-  border-l-[2rem] border-l-transparent
-  border-t-[12rem] border-t-zinc-900
-  border-r-[2rem] border-r-transparent
-  absolute
-  bottom-[3.8rem]
-  right-[16rem]
-  -rotate-108
-"></button>
-<button 
-  value="11"
-  id="11"
-  onClick={handle11ScoreChange}
-  className="w-0 h-0 
-  border-l-[2rem] border-l-transparent
-  border-t-[12rem] border-t-zinc-100
-  border-r-[2rem] border-r-transparent
-  absolute
-  top-0
-  left-0
-  translate-y-[50%]
-  translate-x-[100%]
-  -rotate-90
-">
-</button>
-<button 
-  value="14"
-  id="14"
-
-  className="w-0 h-0 
-  border-l-[2rem] border-l-transparent
-  border-t-[12rem] border-t-zinc-900
-  border-r-[2rem] border-r-transparent
-  absolute
-  top-[4rem]
-  left-[4.5rem]
-  -rotate-72
-"></button>
-<button 
-  value="14"
-  id="14"
-  onClick={handle14ScoreChange}
-  className="w-0 h-0 
-  border-l-[2rem] border-l-transparent
-  border-t-[12rem] border-t-zinc-100
-  border-r-[2rem] border-r-transparent
-  absolute
-  top-[2.5rem]
-  left-[5rem]
-  -rotate-54
-"></button>
-<button 
+  id="13x1"
+  className="w-1/2 h-[16%] bg-zinc-900 absolute right-0 bottom-1/2 transform  rotate-162"
+  style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
+  onClick={handleSingle13ScoreChange}
+></button>
+<button
+  value="4"
+  id="4x1"
+  className="w-1/2 h-[16%] bg-zinc-100 absolute bottom-[56.2%] right-[5.1%]   transform rotate-144 "
+  style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
+  onClick={handleSingle4ScoreChange}
+></button>
+<button
+  value="18"
+  id="18x1"
+  className="w-1/2 h-[16%] bg-zinc-900 absolute bottom-[62%] right-[10.5%]   transform rotate-126 "
+  style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
+  onClick={handleSingle18ScoreChange}
+></button>
+{/* 90 degrees */}
+<button
   value="12"
-  id="12"
-  onClick={handle12ScoreChange}
-  className="w-0 h-0 
-  border-l-[2rem] border-l-transparent
-  border-t-[12rem] border-t-zinc-900
-  border-r-[2rem] border-r-transparent
-  absolute
-  top-[0.5rem]
-  left-[6rem]
-  -rotate-36
-">
-</button>
-<button 
-id="5"
-value="5"
-onClick={handle5ScoreChange}
-  className="w-0 h-0 
-  border-l-[2rem] border-l-transparent
-  border-t-[12rem] border-t-zinc-blue-500
-  border-r-[2rem] border-r-transparent
-  absolute
-  top-[0rem]
-  left-[8rem]
-  -rotate-18
-">
-</button>
-</div>
-</>
-)
-}
+  id="6x1"
+  className="w-1/2 h-[16%] bg-zinc-100 absolute top-1/2 right-0  -translate-y-1/2 transform rotate-180"
+  style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
+  onClick={handleSingle6ScoreChange}
+></button>
+<button
+  value="10"
+  id="10x1"
+  className="w-1/2 h-[16%] bg-zinc-900 absolute right-0 bottom-1/2 translate-y-[100%] transform  -rotate-162"
+  style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
+  onClick={handleSingle10ScoreChange}
+></button>
+<button
+  value="15"
+  id="15x1"
+  className="w-1/2 h-[16%] bg-zinc-100 absolute top-[56.2%] right-[5.1%]   transform -rotate-144 "
+  style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
+  onClick={handleSingle15ScoreChange}
+></button>
+<button
+  value="2"
+  id="2x1"
+  className="w-1/2 h-[16%] bg-zinc-900 absolute top-[62%] right-[10.5%]   transform -rotate-126 "
+  style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
+  onClick={handleSingle2ScoreChange}
+></button>
+
+<button
+  value="17"
+  id="17x1"
+  className="w-1/2 h-[16%] bg-zinc-100 absolute top-[65.5%] right-[17.5%]   transform -rotate-108 "
+  style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
+  onClick={handleSingle17ScoreChange}
+></button>
+<button
+  value="3"
+  id="3x1"
+  className="w-1/2 h-[16%] bg-zinc-900 absolute bottom-0 right-1/2 -translate-y-[100%] translate-x-[50%] transform -rotate-90"
+  style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
+  onClick={handleSingle3ScoreChange}
+></button>
+        <button
+  value="19"
+  id="19x1"
+  className="w-1/2 h-[16%] bg-zinc-100 absolute top-[65.5%] left-[17.5%]   transform -rotate-72 "
+  style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
+  onClick={handleSingle19ScoreChange}
+></button>
+<button
+  value="12"
+  id="12x1"
+  className="w-1/2 h-[16%] bg-zinc-900 absolute top-[62%] left-[10.5%]   transform -rotate-54 "
+  style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
+  onClick={handleSingle12ScoreChange}
+></button>
+<button
+  value="16"
+  id="16x1"
+  className="w-1/2 h-[16%] bg-zinc-100 absolute top-[56.2%] left-[5.1%]   transform -rotate-36 "
+  style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
+  onClick={handleSingle16ScoreChange}
+></button>
+<button
+  value="8"
+  id="8x1"
+  className="w-1/2 h-[16%] bg-zinc-900 absolute left-0 bottom-1/2 translate-y-[100%] transform  -rotate-18"
+  style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
+  onClick={handleSingle8ScoreChange}
+></button>
+{/* 270 degree */}
+<button
+  value="11"
+  id="11x1"
+  className="w-1/2 h-[16%] bg-zinc-100 absolute top-1/2 left-0 -translate-y-1/2 transform "
+  style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
+  onClick={handleSingle11ScoreChange}
+></button>
+<button
+  value="14"
+  id="14x1"
+  className="w-1/2 h-[16%] bg-zinc-900 absolute left-0 bottom-1/2 transform  rotate-18"
+  style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
+  onClick={handleSingle14ScoreChange}
+></button>
+<button
+  value="9"
+  id="9x1"
+  className="w-1/2 h-[16%] bg-zinc-100 absolute bottom-[56.2%] left-[5.1%]   transform rotate-36 "
+  style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
+  onClick={handleSingle9ScoreChange}
+></button>
+<button
+  value="12"
+  id="12x1"
+  className="w-1/2 h-[16%] bg-zinc-900 absolute bottom-[62%] left-[10.5%]   transform rotate-54 "
+  style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
+  onClick={handleSingle12ScoreChange}
+></button>
+<button
+  value="5"
+  id="5x1"
+  className=" w-1/2 h-[16%] bg-zinc-100 absolute bottom-[65.5%] left-[17.5%]   transform rotate-72 "
+  style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
+  onClick={handleSingle5ScoreChange}
+></button>
+
+      </div>
+    </>
+  );
+};
+
+export default InnerRing;
