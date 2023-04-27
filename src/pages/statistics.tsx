@@ -5,7 +5,9 @@ function statistics() {
   return (
 <>
 <Layout>
-    <h1>Statistics page</h1>
+<div className='w-full h-full bg-inherit flex justify-center items-center'>
+  <h1 className='p-8 bg-zinc-800 text-white text-xl'>Statistics</h1>
+</div>
 </Layout>
 </>
   )
