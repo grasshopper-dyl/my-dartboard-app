@@ -98,7 +98,7 @@ const OuterRing = ({ onScoreChange }) => {
   id="1x1"
   className="w-1/2 h-[16%] bg-light-off-white absolute bottom-[65.5%] right-[17.5%]   transform rotate-108 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
-  onClick={handleSingle18ScoreChange}
+  onClick={handleSingle1ScoreChange}
 ></button>
 <button
   value="13"
@@ -173,11 +173,11 @@ const OuterRing = ({ onScoreChange }) => {
   onClick={handleSingle19ScoreChange}
 ></button>
 <button
-  value="12"
-  id="12x1"
+  value="7"
+  id="7x1"
   className="w-1/2 h-[16%] bg-dartboard-black absolute top-[62%] left-[10.5%]   transform -rotate-54 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
-  onClick={handleSingle12ScoreChange}
+  onClick={handleSingle7ScoreChange}
 ></button>
 <button
   value="16"

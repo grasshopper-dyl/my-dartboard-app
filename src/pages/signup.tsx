@@ -1,21 +1,22 @@
+import React from 'react'
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import Layout from '@/components/Layout'
-const inter = Inter({ subsets: ['latin'] })
-import Hero from '../components/Hero'
+import SignUp from '../components/SignUp'
 
-export default function Home() {
+function signup() {
   return (
-    <>
-      <Head>
+<>
+<Head>
         <title>The Dart Scoreboard</title>
         <meta name="description" content="High quality score tracking and statistics for darts" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 <Layout>
-<Hero/>
+<SignUp/>
 </Layout>
-     </>
-   )
-   }
+</>
+  )
+}
+
+export default signup

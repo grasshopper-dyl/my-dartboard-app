@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import Layout from '@/components/Layout'
 const inter = Inter({ subsets: ['latin'] })
-import Hero from '../components/Hero'
+import Login from '../components/Login'
+import Layout from '../components/Layout'
 
-export default function Home() {
+export default function ScoreboardPage() {
   return (
     <>
       <Head>
@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 <Layout>
-<Hero/>
+<Login/>
 </Layout>
      </>
    )

@@ -98,7 +98,7 @@ const MultiX2 = ({ onScoreChange }) => {
   id="1x2"
   className="w-1/2 h-[16%] bg-dartboard-green absolute bottom-[65.5%] right-[17.5%]   transform rotate-108 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
-  onClick={handleDouble18ScoreChange}
+  onClick={handleDouble1ScoreChange}
 ></button>
 <button
   value="26"
@@ -173,11 +173,11 @@ const MultiX2 = ({ onScoreChange }) => {
   onClick={handleDouble19ScoreChange}
 ></button>
 <button
-  value="24"
-  id="12x2"
+  value="14"
+  id="7x2"
   className="w-1/2 h-[16%] bg-dartboard-red absolute top-[62%] left-[10.5%]   transform -rotate-54 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
-  onClick={handleDouble12ScoreChange}
+  onClick={handleDouble7ScoreChange}
 ></button>
 <button
   value="32"

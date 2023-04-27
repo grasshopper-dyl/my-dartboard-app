@@ -1,6 +1,9 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
+import mainLogo from '../images/mainLogo.png'
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -15,49 +18,51 @@ export default function Nav() {
             <div className="flex h-16 justify-between">
               <div className="flex">
                 <div className="flex flex-shrink-0 items-center">
-                 {/* NAV IMAGE */}
-                </div>
+                <Image className="w-16 h-16 flex"
+  src={mainLogo}
+  />                </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {/* Current: "border-[#C6A155] text-gray-900", Default: "border-transparent text-warm-gold hover:border-[#C6A155] hover:text-warm-gold" */}
                   <a
                     href="/"
-                    className="inline-flex items-center border-b-2 border-[#C6A155] px-1 pt-1 text-sm font-medium text-warm-gold"
+                    className="inline-flex items-center border-b-2 border-[#C6A155] px-1 pt-1 text-lg font-medium text-warm-gold"
                   >
                     Home
                   </a>
                   <a
                     href="/scoreboard"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-warm-gold hover:border-[#C6A155] hover:text-warm-gold"
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-lg font-medium text-warm-gold hover:border-[#C6A155] hover:text-warm-gold"
                   >
                     Scoreboard
                   </a>
                   <a
                     href="/rules"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-warm-gold hover:border-[#C6A155] hover:text-warm-gold"
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-lg font-medium text-warm-gold hover:border-[#C6A155] hover:text-warm-gold"
                   >
                     Game Rules
                   </a>
                   <a
                     href="/statistics"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-warm-gold hover:border-[#C6A155] hover:text-warm-gold"
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-lg font-medium text-warm-gold hover:border-[#C6A155] hover:text-warm-gold"
                   >
                     Statistics
                   </a>
                 </div>
               </div>
               <div className="hidden sm:ml-6 sm:flex sm:items-center">
-                <button
+                <a
                   type="button"
+                  href='/login'
                   className="rounded-full bg-white p-1 text-gray-400 hover:text-warm-gold focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                 >
-                  <span className="sr-only">View notifications</span>
+                  <span className="sr-only">Login or Register</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button>
+                </a>
 
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">
                   <div>
-                    <Menu.Button className="flex rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                    <Menu.Button className="flex rounded-full bg-dark-green text-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
@@ -80,7 +85,7 @@ export default function Nav() {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-warm-gold')}
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-lg text-warm-gold')}
                           >
                             Your Profile
                           </a>
@@ -90,7 +95,7 @@ export default function Nav() {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-warm-gold')}
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-lg text-warm-gold')}
                           >
                             Settings
                           </a>
@@ -100,7 +105,7 @@ export default function Nav() {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-warm-gold')}
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-lg text-warm-gold')}
                           >
                             Sign out
                           </a>
@@ -130,30 +135,30 @@ export default function Nav() {
               <Disclosure.Button
                 as="a"
                 href="#"
-                className="block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700"
+                className="block border-l-4 border-[#C6A155] bg-dark-green py-2 pl-3 pr-4 text-base font-medium text-warm-gold"
               >
                 Dashboard
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="#"
+                href="/scoreboard"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-warm-gold hover:border-[#C6A155] hover:bg-gray-50 hover:text-warm-gold"
               >
-                Team
+                Scoreboard
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="#"
+                href="rules"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-warm-gold hover:border-[#C6A155] hover:bg-gray-50 hover:text-warm-gold"
               >
-                Projects
+                Game Rules
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="#"
+                href="statistics"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-warm-gold hover:border-[#C6A155] hover:bg-gray-50 hover:text-warm-gold"
               >
-                Calendar
+                Statistics
               </Disclosure.Button>
             </div>
             <div className="border-t border-gray-200 pb-3 pt-4">
@@ -166,8 +171,8 @@ export default function Nav() {
                   />
                 </div>
                 <div className="ml-3">
-                  <div className="text-base font-medium text-gray-800">Tom Cook</div>
-                  <div className="text-sm font-medium text-warm-gold">tom@example.com</div>
+                  <div className="text-lg font-medium text-warm-gold">Tom Cook</div>
+                  <div className="text-lg font-medium text-warm-gold">tom@example.com</div>
                 </div>
                 <button
                   type="button"

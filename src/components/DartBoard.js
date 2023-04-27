@@ -7,7 +7,7 @@ import MultiX3 from "./MultiX3";
 import OuterRing from "./OuterRing";
 
 
-export default function DartBoard({ onScoreChange }) {
+export default function DartBoard({ onScoreChange, numPlayers, currentPlayer }) {
   const handleScoreChange = (points, event) => {
     onScoreChange(points, event);
   };
@@ -26,7 +26,9 @@ export default function DartBoard({ onScoreChange }) {
       <MultiX2 onScoreChange={handleScoreChange} />
       <OuterRing onScoreChange={handleScoreChange}/>
       <MultiX3 onScoreChange={handleScoreChange} />
-      <InnerRing onScoreChange={handleScoreChange}/>
+      <InnerRing numPlayers={numPlayers}
+  currentPlayer={currentPlayer}
+  onCricketScoreChange={handleScoreChange} onScoreChange={handleScoreChange}/>
       <Bullseye onScoreChange={handleScoreChange}/>
 
     </div>

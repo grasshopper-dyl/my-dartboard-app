@@ -173,11 +173,11 @@ const MultiX3 = ({ onScoreChange }) => {
   onClick={handleTriple19ScoreChange}
 ></button>
 <button
-  value="36"
-  id="12x3"
+  value="21"
+  id="7x3"
   className="w-1/2 h-[16%] bg-dartboard-red absolute top-[62%] left-[10.5%]   transform -rotate-54 "
   style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)' }}
-  onClick={handleTriple12ScoreChange}
+  onClick={handleTriple7ScoreChange}
 ></button>
 <button
   value="48"

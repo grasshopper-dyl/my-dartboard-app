@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import DartBoard from "./DartBoard";
 import Image from "next/image";
 import wood from '../images/wood.png'
+import CricketScoreboard from '../components/CricketScoreboard'
 
 export default function Scoreboard() {
   const [playerScores, setPlayerScores] = useState([]);
@@ -199,6 +200,7 @@ return (
                 4 Players
               </button>
             </div>
+            {gameMode === "cricket" && <CricketScoreboard numPlayers={numPlayers} />}
           </div>
         </div>
         
