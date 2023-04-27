@@ -1,16 +1,23 @@
 import React from 'react'
 import Image from 'next/image'
-import ruleHeaderImage from '../images/ruleHeaderImage.jpg'
+import ruleHeaderImage from '../images/ruleHeaderImage.png'
+import ruleHeaderMobile from '../images/ruleHeaderMobile.png'
+
 
 function RulesHeader() {
   return (
-    <div className='w-full h-96 relative'>
-        <Image  className='w-full h-full'
+    <div className='w-full h-fit relative'>
+        <Image  className='w-full h-96 hidden md:flex'
         src={ruleHeaderImage}
         placeholder='blurred'
         loading='eager'
         />
-    <h1 className='absolute bottom-1/2 left-1/2 -translate-x-1/2 text-5xl text-bold text-white '>Game Rules</h1>
+                <Image  className='w-full h-fit md:hidden'
+        src={ruleHeaderMobile}
+        placeholder='blurred'
+        loading='eager'
+        />
+    <h1 className='hidden'>Game Rules</h1>
       
     </div>
   )

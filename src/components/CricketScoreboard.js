@@ -42,7 +42,7 @@ export default function CricketScoreboard({ numPlayers, onCricketScoreChange }) 
   };
 
   return (
-    <div className="w-full h-fit">
+    <div className="w-full h-fit text-white">
       <table className="w-full table-auto border-collapse">
         <thead>
           <tr>
