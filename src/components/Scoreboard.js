@@ -153,7 +153,7 @@ return (
           </div>
         )}
           <br />
-          <div className="flex flex-col  rounded-xl items-center text-white">
+          <div className="flex flex-col md:flex-row rounded-xl items-center text-white">
             <button
               className="bg-blue-500 p-2 mb-4 w-fit h-fit rounded-lg"
               onClick={resetGame}
