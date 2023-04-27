@@ -6,7 +6,10 @@ function statistics() {
 <>
 <Layout>
 <div className='w-full h-screen bg-inherit flex justify-center items-center'>
-  <h1 className='p-8 bg-zinc-800 text-white text-xl'>Statistics</h1>
+  <div className='p-8 bg-zinc-800 text-white text-xl rounded-xl text-center'>
+    <h1 className='mb-4'>Statistics</h1>
+    <h2>page coming soon</h2>
+  </div>
 </div>
 </Layout>
 </>
