@@ -30,7 +30,6 @@ export default function SignUp() {
   }
 
   return (
-    <>
       <div className="flex min-h-full flex-col bg-[#EDEDED] justify-center py-12 sm:px-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <Image className="w-36 h-36 flex mx-auto"
@@ -156,6 +155,9 @@ export default function SignUp() {
           </a>
         </div>
       </div>
-    </>
+      </div>
+      </div>
+      </div>
+      </div>
   );
 }
