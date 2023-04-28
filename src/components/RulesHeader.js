@@ -12,7 +12,7 @@ function RulesHeader() {
         placeholder='blurred'
         loading='eager'
         />
-                <Image  className='w-full h-fit md:hidden'
+                <Image  className='w-full h-24 md:hidden'
         src={ruleHeaderMobile}
         placeholder='blurred'
         loading='eager'

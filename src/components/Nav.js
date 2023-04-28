@@ -52,7 +52,7 @@ export default function Nav() {
               <div className="hidden sm:ml-6 sm:flex sm:items-center">
                 <a
                   type="button"
-                  href='/login'
+                  href='/api/auth/signin'
                   className="rounded-full bg-white p-1 text-gray-400 hover:text-warm-gold focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                 >
                   <span className="sr-only">Login or Register</span>

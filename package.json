@@ -1,34 +1,35 @@
 {
   "name": "my-dartboard-app",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "dart scoretracking application",
+  "main": "next.config.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@headlessui/react": "^1.7.13",
+    "@headlessui/react": "^1.7.14",
     "@heroicons/react": "^2.0.17",
-    "@next-auth/prisma-adapter": "^1.0.5",
-    "@prisma/client": "^4.12.0",
+    "@next-auth/prisma-adapter": "^1.0.6",
     "@tailwindcss/forms": "^0.5.3",
-    "@types/node": "18.15.10",
-    "@types/react": "18.0.30",
-    "@types/react-dom": "18.0.11",
-    "mssql": "^9.1.1",
-    "next": "13.2.4",
-    "next-auth": "^4.22.0",
-    "prisma-client-lib": "1.x",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "5.0.2"
+    "autoprefixer": "^10.4.14",
+    "next": "^13.3.1",
+    "next-auth": "^4.22.1",
+    "nodemailer": "^6.9.1",
+    "postcss": "^8.4.23",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.21",
-    "prisma": "^4.12.0",
-    "tailwindcss": "^3.2.7"
+    "@types/node": "18.16.1",
+    "@types/react": "18.2.0",
+    "prisma": "^4.13.0",
+    "tailwindcss": "^3.3.2",
+    "typescript": "5.0.4"
   }
 }

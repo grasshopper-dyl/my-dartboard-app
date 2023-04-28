@@ -182,7 +182,7 @@ return (
             </div>
             <div className="grid grid-flow-row grid-row-2 grid-cols-2 justify-center  gap-4   max-w-[90%]">
               <button
-                className={`h-full px-4 py-2 border-2 border-solid border-gray-400 bg-green-800 text-white rounded-lg p-2 ${
+                className={`h-fit px-5 py-2 border-2 border-solid border-gray-400 bg-green-800 text-white rounded-lg p-2 ${
                   numPlayers === 1 ? "bg-gray-400" : ""
                 }`}
                 onClick={() => setNumPlayers(1)}
