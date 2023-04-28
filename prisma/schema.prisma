@@ -5,10 +5,12 @@ generator client {
 datasource db {
   provider = "sqlserver"
   url      = env("DATABASE_URL")
+    shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+
 }
 
 model Account {
-  id                String  @id(map: "PK__Account__3213E83FD473D917") @db.NVarChar(255)
+  id                String  @id(map: "PK__Account__3213E83FD473D917") @default(uuid()) @db.NVarChar(255)
   userId            String? @db.NVarChar(255)
   type              String? @db.NVarChar(255)
   provider          String? @db.NVarChar(255)
@@ -50,6 +52,5 @@ model VerificationToken {
   token     String   @unique
   expires   DateTime?
 
-  @@ignore
 }
 
