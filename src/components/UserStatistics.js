@@ -23,7 +23,6 @@ const UserStatistics = () => {
 
       {/* Game Statistics and Progress Over Time Sections */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Game Statistics Section */}
         <div className="bg-white shadow-md rounded-lg p-6">
           <h3 className="text-xl font-bold mb-4">Game Statistics</h3>
           <div>
