@@ -1,7 +1,6 @@
 export default function Darts301Rules() {
     const rules = [
       'Each player starts with a score of 301.',
-      'In some variations of 301, a player must hit a double (the outer ring) to start scoring. This is known as "doubling in." If this rule is applied, any darts thrown before hitting a double will not count towards reducing the player\'s score.',
       'Each player throws three darts per turn.',
       'The sum of the points scored with the three darts is subtracted from the player\'s current total. Hitting a double or triple ring multiplies the point value of the corresponding segment (double equals 2x, triple equals 3x).',
       'To win the game, a player must reach exactly zero by finishing with a double (the outer ring). For example, if a player has 32 points left, they must hit a double 16 to win the game. If a player scores more points than they have left, it is called a "bust," and their turn ends with no points subtracted from their score.',
