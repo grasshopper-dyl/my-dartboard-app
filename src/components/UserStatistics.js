@@ -1,7 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
+import { useSession } from "next-auth/client";
+
 
 const UserStatistics = () => {
+
+  const [session, loading] = useSession();
+
   return (
     <div className="bg-gray-100 min-h-screen p-4">
       {/* User Profile Section */}
@@ -15,8 +20,8 @@ const UserStatistics = () => {
             className="rounded-full"
           />
           <div className="ml-4">
-            <h2 className="text-xl font-bold">User Name</h2>
-            <p className="text-sm text-gray-600">Member since: Month, Year</p>
+          <h2 className="text-xl font-bold">{session.user.name}</h2>
+             <p className="text-sm text-gray-600">Member since: Month, Year</p>
           </div>
         </div>
       </section>

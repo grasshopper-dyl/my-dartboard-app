@@ -1,10 +1,8 @@
-import Layout from '@/components/Layout'
 import React from 'react'
 
 function privacy() {
   return (
 <>
-<Layout>
 <div className='w-full h-screen bg-zinc-200'>
     <p>
     Privacy Policy:
@@ -38,7 +36,6 @@ We reserve the right to modify or update these terms of service at any time, wit
     </p>
     
 </div>
-</Layout>
 </>
   )
 }
