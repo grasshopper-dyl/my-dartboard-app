@@ -1,29 +1,15 @@
 import React from 'react';
-import Image from 'next/image';
-import { useSession } from "next-auth/client";
 
 
 const UserStatistics = () => {
 
-  const [session, loading] = useSession();
 
   return (
     <div className="bg-gray-100 min-h-screen p-4">
       {/* User Profile Section */}
+
       <section className="bg-white shadow-md rounded-lg p-6 mb-6">
-        <div className="flex items-center">
-          <Image
-            src="/user-profile-placeholder.png"
-            alt="User Profile Picture"
-            width={80}
-            height={80}
-            className="rounded-full"
-          />
-          <div className="ml-4">
-          <h2 className="text-xl font-bold">{session.user.name}</h2>
-             <p className="text-sm text-gray-600">Member since: Month, Year</p>
-          </div>
-        </div>
+
       </section>
 
       {/* Game Statistics and Progress Over Time Sections */}

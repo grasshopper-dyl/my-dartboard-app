@@ -58,6 +58,14 @@ export default function Nav() {
                   <span className="sr-only">Login or Register</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
                 </a>
+                <a
+                  type="button"
+                  href='/api/auth/create'
+                  className="rounded-full bg-white p-1 text-gray-400 hover:text-warm-gold focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                >
+                  <span className="sr-only">Register</span>
+                  <BellIcon className="h-6 w-6" aria-hidden="true" />
+                </a>
 
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">
